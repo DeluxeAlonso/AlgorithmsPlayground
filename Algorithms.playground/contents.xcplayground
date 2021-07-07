@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Quicksort'/>
+        <page name='Kth Largest Element'/>
+        <page name='Binary Search'/>
+        <page name='Two Sum Numbers'/>
+        <page name='Brute-force String Search'/>
+        <page name='Filter Implementation'/>
+    </pages>
+</playground>
