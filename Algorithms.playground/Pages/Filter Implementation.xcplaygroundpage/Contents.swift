@@ -2,8 +2,6 @@
 
 import Foundation
 
-var greeting = "Hello, playground"
-
 extension Sequence {
 
     func filter2(_ isIncluded: (Element) throws -> Bool) rethrows -> [Element] {
@@ -21,6 +19,5 @@ extension Sequence {
 let arrayToEvaluate = [1, 0, 3, 4, 5]
 print(arrayToEvaluate.filter({ $0 != 0 }))
 print(arrayToEvaluate.filter2({ $0 != 0 }))
-
 
 //: [Next](@next)
