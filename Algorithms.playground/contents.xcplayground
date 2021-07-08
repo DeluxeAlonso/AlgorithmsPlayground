@@ -10,5 +10,6 @@
         <page name='Bubble Sort'/>
         <page name='Stack'/>
         <page name='Queue'/>
+        <page name='Linked List'/>
     </pages>
 </playground>
