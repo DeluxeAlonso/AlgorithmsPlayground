@@ -11,5 +11,6 @@
         <page name='Stack'/>
         <page name='Queue'/>
         <page name='Linked List'/>
+        <page name='Tree'/>
     </pages>
 </playground>
