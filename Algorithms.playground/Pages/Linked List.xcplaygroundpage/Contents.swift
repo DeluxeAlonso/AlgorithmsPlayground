@@ -1,7 +1,5 @@
 //: [Previous](@previous)
 
-import Foundation
-
 class Node<T> {
 
     var value: T
