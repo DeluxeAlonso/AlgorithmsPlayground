@@ -2,8 +2,6 @@
 
 import Foundation
 
-var greeting = "Hello, playground"
-
 func quicksort<T: Comparable>(_ array: [T]) -> [T] {
     guard array.count > 1 else {
         return []

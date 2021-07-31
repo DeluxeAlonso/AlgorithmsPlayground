@@ -2,9 +2,6 @@
 
 import Foundation
 
-var greeting = "Hello, playground"
-
-
 func binarySearch<T: Comparable>(_ a: [T], key: T, range: Range<Int>) -> Int? {
     guard range.upperBound > range.lowerBound else {
         return nil

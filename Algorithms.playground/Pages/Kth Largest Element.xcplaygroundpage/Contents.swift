@@ -2,8 +2,6 @@
 
 import Foundation
 
-var greeting = "Hello, playground"
-
 func kthLargestElement(in array: [Int], k: Int) -> Int? {
     let sortedArray = array.sorted()
     guard k < sortedArray.count + 1, k > 0 else {
