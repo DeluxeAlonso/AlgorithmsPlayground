@@ -1,7 +1,5 @@
 //: [Previous](@previous)
 
-import Foundation
-
 public class Node<T> {
 
     public var value: T
