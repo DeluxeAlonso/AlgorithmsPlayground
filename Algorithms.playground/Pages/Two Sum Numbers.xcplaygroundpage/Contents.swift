@@ -1,7 +1,5 @@
 //: [Previous](@previous)
 
-import UIKit
-
 // Given an array of integers and an integer target,
 // return the indices of two numbers that add up to the target.
 
