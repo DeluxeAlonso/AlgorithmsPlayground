@@ -1,7 +1,5 @@
 //: [Previous](@previous)
 
-import Foundation
-
 struct Queue<T> {
 
     var array: [T]
