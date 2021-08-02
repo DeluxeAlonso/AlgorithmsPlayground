@@ -1,9 +1,7 @@
 //: [Previous](@previous)
 
 func quicksort<T: Comparable>(_ array: [T]) -> [T] {
-    guard array.count > 1 else {
-        return []
-    }
+    guard array.count > 1 else { return [] }
 
     let pivot = array[array.count / 2]
 
