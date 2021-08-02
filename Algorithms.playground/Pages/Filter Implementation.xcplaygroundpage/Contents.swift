@@ -1,7 +1,5 @@
 //: [Previous](@previous)
 
-import Foundation
-
 extension Sequence {
 
     func filter2(_ isIncluded: (Element) throws -> Bool) rethrows -> [Element] {
