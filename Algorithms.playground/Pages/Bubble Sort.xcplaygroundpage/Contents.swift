@@ -1,7 +1,5 @@
 //: [Previous](@previous)
 
-import Foundation
-
 func bubbleSort<T: Comparable>(_ elements: [T]) -> [T] {
     var elements = elements
     for i in 0..<elements.count {
