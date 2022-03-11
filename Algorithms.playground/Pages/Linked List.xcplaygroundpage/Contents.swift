@@ -1,7 +1,6 @@
 //: [Previous](@previous)
 
 class Node<T> {
-
     var value: T
     var next: Node?
 
@@ -9,7 +8,6 @@ class Node<T> {
         self.value = value
         self.next = next
     }
-
 }
 
 struct LinkedList<T> {
@@ -17,16 +15,17 @@ struct LinkedList<T> {
     var head: Node<T>?
     var tail: Node<T>?
 
-    // MARK: - Append
+    var isEmpty: Bool {
+        head == nil
+    }
 
-    public mutating func append(_ value: T) {
-        guard head == nil else {
-            head = Node(value: value, next: nil)
+    mutating func append(element: T) {
+        guard !isEmpty else {
+            head = Node<T>(value: element, next: nil)
             tail = head
             return
         }
-
-        tail!.next = Node(value: value, next: nil)
+        tail!.next = Node(value: element, next: nil)
         tail = tail!.next
     }
 
