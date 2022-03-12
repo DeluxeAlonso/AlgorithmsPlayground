@@ -29,6 +29,15 @@ struct LinkedList<T> {
         tail = tail!.next
     }
 
+    mutating func push(element: T) {
+        guard !isEmpty else {
+            head = Node<T>(value: element, next: nil)
+            tail = head
+            return
+        }
+        
+    }
+
 }
 
 //: [Next](@next)
