@@ -10,7 +10,7 @@ func twoSum(_ nums: [Int], target: Int) -> (Int, Int)? {
         var newNums = nums
         let indexToRemove = Int(nums.firstIndex(of: i) ?? 0)
         newNums.remove(at: indexToRemove)
-        for j in nums {
+        for j in newNums {
             if nums[i] + nums[j] == target { return (i, j) }
         }
     }
