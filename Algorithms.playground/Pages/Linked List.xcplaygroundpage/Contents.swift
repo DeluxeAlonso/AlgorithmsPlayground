@@ -1,6 +1,7 @@
 //: [Previous](@previous)
 
 class Node<T> {
+
     var value: T
     var next: Node?
 
@@ -8,6 +9,7 @@ class Node<T> {
         self.value = value
         self.next = next
     }
+
 }
 
 struct LinkedList<T> {
