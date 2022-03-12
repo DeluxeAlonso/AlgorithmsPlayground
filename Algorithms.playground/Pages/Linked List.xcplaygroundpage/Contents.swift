@@ -35,7 +35,6 @@ struct LinkedList<T> {
             tail = head
             return
         }
-        
     }
 
 }
