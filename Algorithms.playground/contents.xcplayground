@@ -13,5 +13,6 @@
         <page name='Linked List'/>
         <page name='Tree'/>
         <page name='2DArray'/>
+        <page name='Diagonal Difference'/>
     </pages>
 </playground>
