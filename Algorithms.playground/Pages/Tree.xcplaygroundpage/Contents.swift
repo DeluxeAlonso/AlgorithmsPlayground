@@ -44,7 +44,7 @@ public struct BinarySearchTree<T: Comparable> {
 
     public init() {}
 
-    public func containtsInOrder(_ value: T) -> Bool {
+    public func containsInOrder(_ value: T) -> Bool {
         guard let root = root else {
             return false
         }
