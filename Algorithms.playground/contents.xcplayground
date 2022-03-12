@@ -12,5 +12,6 @@
         <page name='Queue'/>
         <page name='Linked List'/>
         <page name='Tree'/>
+        <page name='2DArray'/>
     </pages>
 </playground>
