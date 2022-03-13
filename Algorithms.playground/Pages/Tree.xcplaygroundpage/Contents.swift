@@ -23,14 +23,14 @@ class Node<T> {
 class BinaryNode<T> {
 
     var value: T
-    public var left: BinaryNode?
-    public var right: BinaryNode?
+    var left: BinaryNode?
+    var right: BinaryNode?
 
-    public init(_ value: T) {
+    init(_ value: T) {
         self.value = value
     }
 
-    public func traverseInOrder(visit: (T) -> Void) {
+    func traverseInOrder(visit: (T) -> Void) {
         left?.traverseInOrder(visit: visit)
         visit(value)
         right?.traverseInOrder(visit: visit)
