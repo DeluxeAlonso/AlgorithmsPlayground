@@ -12,4 +12,12 @@ func diagonalDifference(arr: [[Int]]) -> Int {
     return abs(firstDiagonalSum - secondDiagonalSum)
 }
 
+var input = [
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3]
+]
+
+diagonalDifference(arr: input)
+
 //: [Next](@next)
