@@ -1,11 +1,11 @@
 //: [Previous](@previous)
 
-public class Node<T> {
+class Node<T> {
 
-    public var value: T
-    public var children: [Node] = []
+    var value: T
+    var children: [Node] = []
 
-    public init(_ value: T) {
+    init(_ value: T) {
         self.value = value
     }
 
@@ -20,9 +20,9 @@ public class Node<T> {
 
 }
 
-public class BinaryNode<T> {
+class BinaryNode<T> {
 
-    public var value: T
+    var value: T
     public var left: BinaryNode?
     public var right: BinaryNode?
 
