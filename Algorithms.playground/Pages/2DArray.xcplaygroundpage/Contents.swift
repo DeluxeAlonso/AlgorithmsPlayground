@@ -12,4 +12,6 @@ for _ in 1...9 {
     twoDimArray.append(row)
 }
 
+print(twoDimArray)
+
 //: [Next](@next)
