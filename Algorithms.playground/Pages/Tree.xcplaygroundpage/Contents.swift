@@ -38,13 +38,13 @@ class BinaryNode<T> {
 
 }
 
-public struct BinarySearchTree<T: Comparable> {
+struct BinarySearchTree<T: Comparable> {
 
-    public private(set) var root: BinaryNode<T>?
+    private(set) var root: BinaryNode<T>?
 
-    public init() {}
+    init() {}
 
-    public func containsInOrder(_ value: T) -> Bool {
+    func containsInOrder(_ value: T) -> Bool {
         guard let root = root else {
             return false
         }
@@ -59,7 +59,7 @@ public struct BinarySearchTree<T: Comparable> {
         return found
     }
 
-    public func contains(_ value: T) -> Bool {
+    func contains(_ value: T) -> Bool {
         var current = root
         while let node = current {
             if node.value == value {
