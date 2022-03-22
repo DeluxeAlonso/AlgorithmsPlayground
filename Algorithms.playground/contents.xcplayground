@@ -14,5 +14,6 @@
         <page name='Tree'/>
         <page name='2DArray'/>
         <page name='Diagonal Difference'/>
+        <page name='Balanced Parentheses'/>
     </pages>
 </playground>
