@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 import Foundation
 
 struct Stack<T> {
@@ -39,4 +37,3 @@ func isBalanced(_ text: String) -> Bool {
 }
 
 print(isBalanced("((()))"))
-//: [Next](@next)
