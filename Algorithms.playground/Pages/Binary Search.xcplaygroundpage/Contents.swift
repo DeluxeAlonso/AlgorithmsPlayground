@@ -57,7 +57,22 @@ func binarySearch3<T: Comparable>(_ a: [T], key: T) -> Int? {
     return nil
 }
 
+func binarySearchRec<T: Comparable>(_ a: [T], key: T, lowerBound: Int, upperBound: Int) -> Int? {
+    guard lowerBound < upperBound else {
+        return nil
+    }
+    let midIndex = (lowerBound + upperBound) / 2
+    if key < a[midIndex] {
+        return binarySearchRec(a, key: key, lowerBound: lowerBound, upperBound: midIndex-1)
+    } else if key > a[midIndex] {
+        return binarySearchRec(a, key: key, lowerBound: midIndex + 1, upperBound: upperBound)
+    } else {
+        return midIndex
+    }
+}
+
 binarySearch2(numbers, key: 43)
 binarySearch3(numbers, key: 43)
+binarySearchRec(numbers, key: 43, lowerBound: 0, upperBound: numbers.count)
 
 //: [Next](@next)
