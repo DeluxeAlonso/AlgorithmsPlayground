@@ -15,5 +15,6 @@
         <page name='2DArray'/>
         <page name='Diagonal Difference'/>
         <page name='Balanced Parentheses'/>
+        <page name='MinimumMaximum'/>
     </pages>
 </playground>
