@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 struct Stack<T> {
 
     private var elements: [T]
@@ -13,5 +11,3 @@ struct Stack<T> {
     }
 
 }
-
-//: [Next](@next)
