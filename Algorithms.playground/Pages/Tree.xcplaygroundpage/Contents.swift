@@ -1,5 +1,19 @@
 //: [Previous](@previous)
 
+struct Queue<T> {
+
+    var array: [T]
+
+    mutating func enqueue(_ element: T) {
+        array.append(element)
+    }
+
+    mutating func dequeue() -> T? {
+        array.removeFirst()
+    }
+
+}
+
 class Node<T> {
 
     var value: T
@@ -18,6 +32,15 @@ class Node<T> {
         }
     }
 
+    func forEachLevelOrder(visit: (Node) -> Void) {
+        visit(self)
+        var queue = Queue<Node>(array: [])
+        children.forEach { queue.enqueue($0) }
+        while let node = queue.dequeue() {
+            visit(node)
+            node.children.forEach { queue.enqueue($0) }
+        }
+    }
 }
 
 class BinaryNode<T> {
