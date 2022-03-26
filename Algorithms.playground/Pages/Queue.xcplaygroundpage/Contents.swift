@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 
 struct Queue<T> {
 
@@ -13,5 +12,3 @@ struct Queue<T> {
     }
 
 }
-
-//: [Next](@next)
