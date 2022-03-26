@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 
 struct Queue<T> {
 
@@ -97,5 +96,3 @@ struct BinarySearchTree<T: Comparable> {
         return false
     }
 }
-
-//: [Next](@next)
