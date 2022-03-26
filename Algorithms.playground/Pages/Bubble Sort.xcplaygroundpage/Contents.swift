@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 
 func bubbleSort<T: Comparable>(_ elements: [T]) -> [T] {
     var elements = elements
@@ -14,5 +13,3 @@ func bubbleSort<T: Comparable>(_ elements: [T]) -> [T] {
 
 let list = [ 10, 0, 3, 9, 2, 14, 8, 27, 1, 5, 8, -1, 26 ]
 bubbleSort(list)
-
-//: [Next](@next)
