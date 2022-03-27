@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 
 class Node<T> {
 
@@ -40,5 +39,3 @@ struct LinkedList<T> {
     }
 
 }
-
-//: [Next](@next)
