@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 
 // Given an array of integers and an integer target,
 // return the indices of two numbers that add up to the target.
@@ -55,5 +54,3 @@ let a = [2, 3, 4, 4, 7, 8, 9, 10, 12, 14, 21, 22, 100]
 twoSum(a, target: 11)
 twoSum2(a, target: 11)
 twoSum3(a, target: 11)
-
-//: [Next](@next)
