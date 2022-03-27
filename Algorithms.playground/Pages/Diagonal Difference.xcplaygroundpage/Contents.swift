@@ -23,7 +23,7 @@ diagonalDifference(arr: input)
 let years = [15, 2, 67, 4, 5]
 let sum = years.filter { $0 < 10 }.map { $0 * 2 }.reduce(5, +)
 
-print(sum)
+print(sum) // This prints 27
 
 protocol LDelegate: AnyObject {
     var name: String { get }
@@ -75,6 +75,6 @@ let allDrivers = [d1,d2,d3]
 var currentDrivers = allDrivers
 var removedDriver = currentDrivers.removeFirst()
 removedDriver.isEnable = false
-print(allDrivers.count, currentDrivers.count, d1.isEnable)
+print(allDrivers.count, currentDrivers.count, d1.isEnable) // This returns 3 2 true
 
 //: [Next](@next)
