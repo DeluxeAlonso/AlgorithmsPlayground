@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 
 extension Sequence {
 
@@ -17,5 +16,3 @@ extension Sequence {
 let arrayToEvaluate = [1, 0, 3, 4, 5]
 print(arrayToEvaluate.filter({ $0 != 0 }))
 print(arrayToEvaluate.filter2({ $0 != 0 }))
-
-//: [Next](@next)
