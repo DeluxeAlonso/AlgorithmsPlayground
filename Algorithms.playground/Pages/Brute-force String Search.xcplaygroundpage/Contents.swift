@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 
 import Foundation
 
@@ -49,5 +48,3 @@ let indices = "AAAA".indices
 "hola".indexOf("ola")
 "hola".contains2("ola")
 "hola".contains2("no")
-
-//: [Next](@next)
