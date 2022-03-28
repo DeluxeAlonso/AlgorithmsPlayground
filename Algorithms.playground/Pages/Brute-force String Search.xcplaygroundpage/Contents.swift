@@ -1,6 +1,4 @@
 
-import Foundation
-
 extension String {
 
     func indexOf(_ pattern: String) -> String.Index? {
