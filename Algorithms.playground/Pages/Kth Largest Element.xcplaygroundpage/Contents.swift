@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 
 func kthLargestElement(in array: [Int], k: Int) -> Int? {
     let sortedArray = array.sorted()
@@ -9,5 +8,3 @@ func kthLargestElement(in array: [Int], k: Int) -> Int? {
 }
 
 kthLargestElement(in: [ 7, 92, 23, 9, -1, 0, 11, 6 ], k: 4)
-
-//: [Next](@next)
