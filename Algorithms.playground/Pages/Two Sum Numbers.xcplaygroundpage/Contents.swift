@@ -51,6 +51,6 @@ func twoSum3(_ nums: [Int], target: Int) -> (Int, Int)? {
 
 let a = [2, 3, 4, 4, 7, 8, 9, 10, 12, 14, 21, 22, 100]
 
-twoSum(a, target: 11)
-twoSum2(a, target: 11)
-twoSum3(a, target: 11)
+twoSum(a, target: 11) // Returns (2, 4)
+twoSum2(a, target: 11) // Returns (4, 3)
+twoSum3(a, target: 11) // Returns (0, 6)
