@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 
 func binarySearch<T: Comparable>(_ a: [T], key: T, range: Range<Int>) -> Int? {
     guard range.upperBound > range.lowerBound else {
@@ -58,5 +57,3 @@ func binarySearch2<T: Comparable>(_ a: [T], key: T) -> Int? {
 }
 
 binarySearch2(numbers, key: 43)
-
-//: [Next](@next)
