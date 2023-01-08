@@ -1,7 +1,6 @@
-//: [Previous](@previous)
+// We ant to implement an ifelse() statement like the statistical programming language R uses
+// Exmaple: ifelse(condition, valueTrue, valueFalse)
 
-import Foundation
-
-var greeting = "Hello, playground"
-
-//: [Next](@next)
+func iselse(_ condition: Bool, _ valueTrue: Int, _ valueFalse: Int) -> Int {
+    return condition ? valueTrue : valueFalse
+}
