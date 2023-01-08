@@ -1,4 +1,4 @@
-// We ant to implement an ifelse() statement like the statistical programming language R uses
+// We want to implement an ifelse() statement like the statistical programming language R uses.
 // Example: ifelse(condition, valueTrue, valueFalse)
 
 func ifelse(_ condition: Bool, _ valueTrue: Int, _ valueFalse: Int) -> Int {
