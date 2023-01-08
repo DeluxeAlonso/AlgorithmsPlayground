@@ -1,6 +1,6 @@
-// Return true if a given string is a palindrome, false otherwise.
+// MARK: - Palindrome
 
-// MARK: - Using two pointers approach
+// Return true if a given string is a palindrome, false otherwise.
 
 func isPalindrome(_ string: String) -> Bool {
     var i = 0
