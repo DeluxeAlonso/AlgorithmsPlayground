@@ -17,5 +17,6 @@
         <page name='Balanced Parentheses'/>
         <page name='MinimumMaximum'/>
         <page name='Ifelse R Implementation'/>
+        <page name='Palindrome'/>
     </pages>
 </playground>
