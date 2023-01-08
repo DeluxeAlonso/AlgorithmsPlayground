@@ -52,3 +52,9 @@ print(ifelseV4(false, { functionParameter1() }, { functionParameter2() })) // Pr
 
 // MARK: - Autoclosure
 
+func ifelseV5<T>(_ condition: Bool, _ valueTrue: @autoclosure () -> T, _ valueFalse: @autoclosure () -> T) -> T {
+    return condition ? valueTrue() : valueFalse()
+}
+
+print(ifelseV5(true, 1, 0)) // Prints 1
+print(ifelseV5(false, functionParameter1(), functionParameter2())) // Prints 2
