@@ -28,3 +28,27 @@ func ifelseV3<T>(_ condition: Bool, _ valueTrue: T, _ valueFalse: T) -> T {
 print(ifelseV3(true, 1, 0)) // Prints 1
 print(ifelseV3(false, 1, 0)) // Prints 0
 // let value = ifelseV3(false, "1", 0) Does not compile
+
+// MARK: - Closure
+
+func functionParameter1() -> Int {
+    print("1")
+    return 1
+}
+func functionParameter2() -> Int {
+    print("2")
+    return 2
+}
+
+// If we call ifelseV3(true, functionParameter1(), functionParameter2())) both functions
+// will get called.
+
+func ifelseV4<T>(_ condition: Bool, _ valueTrue: () -> T, _ valueFalse: () -> T) -> T {
+    return condition ? valueTrue() : valueFalse()
+}
+
+print(ifelseV4(true, { 1 }, { 0 })) // Prints 1
+print(ifelseV4(false, { functionParameter1() }, { functionParameter2() })) // Prints 2
+
+// MARK: - Autoclosure
+
