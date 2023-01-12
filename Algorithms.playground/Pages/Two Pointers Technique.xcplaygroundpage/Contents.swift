@@ -17,7 +17,7 @@ func isPalindrome(_ string: String) -> Bool {
     return true
 }
 
-print(isPalindrome("aba"))
+print(isPalindrome("aba")) // Prints true
 
 // MARK: - Two sum with sorted array
 
@@ -38,4 +38,5 @@ func twoSumSorted(_ array: [Int], target: Int) -> Bool {
     return false
 }
 
-print(twoSumSorted([1, 2, 4, 6, 8, 9, 14, 15], target: 130)) // Prints true
+print(twoSumSorted([1, 2, 4, 6, 8, 9, 14, 15], target: 13)) // Prints true
+print(twoSumSorted([1, 2, 4, 6, 8, 9, 14, 15], target: 100)) // Prints false
