@@ -58,3 +58,14 @@ func ifelseV5<T>(_ condition: Bool, _ valueTrue: @autoclosure () -> T, _ valueFa
 
 print(ifelseV5(true, 1, 0)) // Prints 1
 print(ifelseV5(false, functionParameter1(), functionParameter2())) // Prints 2
+
+// MARK: - Inlinable
+
+// Because ifelse implementation will never change, it makes sense to mark the function as inlinable
+
+@inlinable func ifelseV6<T>(_ condition: Bool, _ valueTrue: @autoclosure () -> T, _ valueFalse: @autoclosure () -> T) -> T {
+    return condition ? valueTrue() : valueFalse()
+}
+
+print(ifelseV6(true, 1, 0)) // Prints 1
+print(ifelseV6(false, functionParameter1(), functionParameter2())) // Prints 2
