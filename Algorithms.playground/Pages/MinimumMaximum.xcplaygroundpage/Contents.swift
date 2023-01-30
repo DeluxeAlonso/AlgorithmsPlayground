@@ -24,5 +24,5 @@ func maximum<T: Comparable>(_ array: [T]) -> T? {
 }
 
 let array = [ 8, 3, 9, 4, 6 ]
-minimum(array)   // This will return 3
-maximum(array)   // This will return 9
+minimum(array) // This will return 3
+maximum(array) // This will return 9
