@@ -11,5 +11,5 @@ func bubbleSort<T: Comparable>(_ elements: [T]) -> [T] {
     return elements
 }
 
-let list = [ 10, 0, 3, 9, 2, 14, 8, 27, 1, 5, 8, -1, 26 ]
+let list = [10, 0, 3, 9, 2, 14, 8, 27, 1, 5, 8, -1, 26]
 bubbleSort(list)
