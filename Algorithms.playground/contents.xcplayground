@@ -18,5 +18,7 @@
         <page name='MinimumMaximum'/>
         <page name='Ifelse R Implementation'/>
         <page name='Two Pointers Technique'/>
+        <page name='Add Two Numbers'/>
+        <page name='Fibonacci'/>
     </pages>
 </playground>
