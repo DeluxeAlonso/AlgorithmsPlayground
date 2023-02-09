@@ -35,3 +35,15 @@ print(fibRecursive(1)) // Prints 1
 print(fibRecursive(3)) // Prints 2
 print(fibRecursive(5)) // Prints 5
 print(fibRecursive(6)) // Prints 8
+
+// MARK: - With index starting at 1
+
+func fibRecursiveIndexOne(_ n: Int) -> Int {
+    guard n > 2 else { return n - 1 }
+    return fibRecursiveIndexOne(n - 1) + fibRecursiveIndexOne(n - 2)
+}
+
+print(fibRecursiveIndexOne(1)) // Prints 0
+print(fibRecursiveIndexOne(3)) // Prints 1
+print(fibRecursiveIndexOne(5)) // Prints 3
+print(fibRecursiveIndexOne(6)) // Prints 5
