@@ -34,4 +34,4 @@ func isBalanced(_ text: String) -> Bool {
     return stack.count == 0
 }
 
-print(isBalanced("((()))")) //This returns true
+print(isBalanced("((()))")) // This returns true
