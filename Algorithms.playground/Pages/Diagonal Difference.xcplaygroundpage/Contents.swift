@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 // Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 func diagonalDifference(arr: [[Int]]) -> Int {
     let count = arr.count
@@ -19,6 +17,3 @@ var input = [
 ]
 
 diagonalDifference(arr: input)
-
-
-//: [Next](@next)
