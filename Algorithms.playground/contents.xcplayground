@@ -20,5 +20,6 @@
         <page name='Two Pointers Technique'/>
         <page name='Add Two Numbers'/>
         <page name='Fibonacci'/>
+        <page name='Longest Substring'/>
     </pages>
 </playground>
