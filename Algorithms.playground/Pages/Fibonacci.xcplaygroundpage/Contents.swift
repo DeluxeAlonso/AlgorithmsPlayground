@@ -47,3 +47,22 @@ print(fibRecursiveIndexOne(1)) // Prints 0
 print(fibRecursiveIndexOne(3)) // Prints 1
 print(fibRecursiveIndexOne(5)) // Prints 3
 print(fibRecursiveIndexOne(6)) // Prints 5
+
+func fibIterativeIndexOne(_ n: Int) -> Int {
+    guard n > 2 else { return n - 1 }
+
+    var sum = 1
+    var previousNumber = 0
+    for _ in 1...n - 2 {
+        let tempNumber = sum
+        sum = sum + previousNumber
+        previousNumber = tempNumber
+    }
+
+    return sum
+}
+
+print(fibIterativeIndexOne(1)) // Prints 0
+print(fibIterativeIndexOne(3)) // Prints 1
+print(fibIterativeIndexOne(5)) // Prints 3
+print(fibIterativeIndexOne(6)) // Prints 5
