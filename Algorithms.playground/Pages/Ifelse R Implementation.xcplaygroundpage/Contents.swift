@@ -75,15 +75,16 @@ func ifelseV6<T>(_ condition: Bool, _ valueTrue: @autoclosure () throws -> T, _ 
 
 print(ifelseV6(true, 1, 0)) // Prints 1
 print(ifelseV6(true, functionParameter1(), functionParameter2())) // Prints 1
-print(ifelseV6(false, try throwableFunctionParameter1(), try throwableFunctionParameter2())) // Prints 2
+print(try! ifelseV6(false, try throwableFunctionParameter1(), try throwableFunctionParameter2())) // Prints 2
 
 // MARK: - Inlinable
 
 // Because ifelse implementation will never change, it makes sense to mark the function as inlinable
 
-@inlinable func ifelseV7<T>(_ condition: Bool, _ valueTrue: @autoclosure () -> T, _ valueFalse: @autoclosure () -> T) -> T {
-    return condition ? valueTrue() : valueFalse()
+@inlinable func ifelseV7<T>(_ condition: Bool, _ valueTrue: @autoclosure () throws -> T, _ valueFalse: @autoclosure () throws -> T) rethrows -> T {
+    return condition ? try valueTrue() : try valueFalse()
 }
 
 print(ifelseV7(true, 1, 0)) // Prints 1
 print(ifelseV7(false, functionParameter1(), functionParameter2())) // Prints 2
+print(try! ifelseV7(false, try throwableFunctionParameter1(), try throwableFunctionParameter2())) // Prints 2
