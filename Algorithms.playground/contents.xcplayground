@@ -21,5 +21,6 @@
         <page name='Add Two Numbers'/>
         <page name='Fibonacci'/>
         <page name='Longest Substring'/>
+        <page name='Map Implementation'/>
     </pages>
 </playground>
