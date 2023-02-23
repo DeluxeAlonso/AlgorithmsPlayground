@@ -14,7 +14,6 @@ func lengthOfLongestSubstring(_ s: String) -> Int {
                 break
             }
         }
-        print(string)
         if string.count > maxLength {
             maxLength = string.count
         }
@@ -22,7 +21,7 @@ func lengthOfLongestSubstring(_ s: String) -> Int {
     return maxLength
 }
 
-//print(lengthOfLongestSubstring("abcabcbb")) // Should return 3. The answer is "abc", with the length of 3.
-//print(lengthOfLongestSubstring("bbbbb")) // The answer is "b", with the length of 1.
-//print(lengthOfLongestSubstring("pwwkew")) // The answer is "wke", with the length of 3.
+print(lengthOfLongestSubstring("abcabcbb")) // Should return 3. The answer is "abc", with the length of 3.
+print(lengthOfLongestSubstring("bbbbb")) // The answer is "b", with the length of 1.
+print(lengthOfLongestSubstring("pwwkew")) // The answer is "wke", with the length of 3.
 print(lengthOfLongestSubstring("au")) // The answer is "wke", with the length of 3.
