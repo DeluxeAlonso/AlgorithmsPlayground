@@ -1,7 +1,14 @@
-//: [Previous](@previous)
+extension Collection {
 
-import Foundation
+    func reduce2<T>(_ initialResult: T, _ nextResult: (T, Element) throws -> T) rethrows -> T {
+        var accumulator = initialResult
+        for element in self {
+            accumulator = try nextResult(accumulator, element)
+        }
+        return accumulator
+    }
 
-var greeting = "Hello, playground"
+}
 
-//: [Next](@next)
+print([1, 2, 3].reduce(0, { x, y in x + y })) // Prints 6
+print([1, 2, 3].reduce2(0, { x, y in x + y })) // Prints 6

@@ -22,5 +22,6 @@
         <page name='Fibonacci'/>
         <page name='Longest Substring'/>
         <page name='Map Implementation'/>
+        <page name='Reduce Implementation'/>
     </pages>
 </playground>
