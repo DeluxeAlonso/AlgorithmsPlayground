@@ -23,5 +23,6 @@
         <page name='Longest Substring'/>
         <page name='Map Implementation'/>
         <page name='Reduce Implementation'/>
+        <page name='Balanced Arrays'/>
     </pages>
 </playground>
