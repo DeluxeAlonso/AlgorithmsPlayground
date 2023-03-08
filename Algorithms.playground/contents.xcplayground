@@ -25,5 +25,6 @@
         <page name='Reduce Implementation'/>
         <page name='Balanced Arrays'/>
         <page name='Array Depth'/>
+        <page name='Median of Two Sorted Arrays'/>
     </pages>
 </playground>
