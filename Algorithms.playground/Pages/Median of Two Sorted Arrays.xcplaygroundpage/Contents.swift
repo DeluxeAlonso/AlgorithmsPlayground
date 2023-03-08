@@ -55,38 +55,41 @@ func findMedianSortedArraysV2(_ nums1: [Int], _ nums2: [Int]) -> Double {
     }
 }
 
-//func findMedianSortedArraysV2(_ nums1: [Int], _ nums2: [Int]) -> Double {
-//    var newArray: [Int] = []
-//    var nums1 = nums1
-//    var nums2 = nums2
-//
-//    while !nums1.isEmpty || !nums2.isEmpty {
-//        guard let val1 = nums1.first else {
-//            nums1.popFirst()
-//            newArray.append(nums2.removeFirst())
-//            continue
-//        }
-//        guard let val2 = nums2.first else {
-//            newArray.append(nums1.removeFirst())
-//            newArray.drop
-//            continue
-//        }
-//
-//        if val1 > val2 {
-//            newArray.append(nums2.removeFirst())
-//        } else {
-//            newArray.append(nums1.removeFirst())
-//        }
-//    }
-//
-//    let index = Int(Double(newArray.count / 2).rounded(.down))
-//    if newArray.count % 2 == 0 {
-//        return Double(newArray[index] + newArray[index - 1]) / 2.0
-//    } else {
-//        return Double(newArray[index])
-//    }
-//}
-
-
 print(findMedianSortedArraysV2([1, 3], [2])) // Prints 2
 print(findMedianSortedArraysV2([1, 2], [3, 4])) // Prints 2.5
+
+// MARK: - Without sort method using removeFirst
+
+func findMedianSortedArraysV3(_ nums1: [Int], _ nums2: [Int]) -> Double {
+    var newArray: [Int] = []
+    var nums1 = nums1
+    var nums2 = nums2
+
+    while !nums1.isEmpty || !nums2.isEmpty {
+        guard let val1 = nums1.first else {
+            newArray.append(nums2.removeFirst())
+            continue
+        }
+        guard let val2 = nums2.first else {
+            newArray.append(nums1.removeFirst())
+            newArray.drop
+            continue
+        }
+
+        if val1 > val2 {
+            newArray.append(nums2.removeFirst())
+        } else {
+            newArray.append(nums1.removeFirst())
+        }
+    }
+
+    let index = Int(Double(newArray.count / 2).rounded(.down))
+    if newArray.count % 2 == 0 {
+        return Double(newArray[index] + newArray[index - 1]) / 2.0
+    } else {
+        return Double(newArray[index])
+    }
+}
+
+print(findMedianSortedArraysV3([1, 3], [2])) // Prints 2
+print(findMedianSortedArraysV3([1, 2], [3, 4])) // Prints 2.5
